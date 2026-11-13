@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seg-Up Segurança do Trabalho | Eunápolis e região</title>
+<link rel="icon" href="img/favicon.png">
+<meta name="description" content="Seg-Up Consultoria e Atividades de Segurança do Trabalho: PGR, laudos, LTCAT, eSocial SST, riscos psicossociais (NR-1) e treinamentos em NRs. Eunápolis e região, atendendo toda a Bahia.">
+<meta name="theme-color" content="#032538">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Seg-Up Segurança do Trabalho">
+<meta property="og:description" content="PGR, laudos, eSocial SST, riscos psicossociais e treinamentos em NRs para empresas da Bahia.">
+<meta property="og:image" content="img/og.png">
+<link rel="apple-touch-icon" href="img/icone.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Seg-Up Consultoria e Atividades de Segurança do Trabalho Ltda","alternateName":"Seg-Up Segurança do Trabalho","taxID":"54.478.734/0001-00","foundingDate":"2024-03-26","telephone":"+55-73-99908-6725","email":"segup.sst@gmail.com","logo":"img/logo.png","sameAs":["https://instagram.com/segup.sst"],"address":{"@type":"PostalAddress","addressLocality":"Eunápolis","addressRegion":"BA","addressCountry":"BR"},"areaServed":"Bahia","openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: identidade Seg-Up. Base clara e arejada, azul-marinho da marca nos blocos de peso, verde da marca como acento e nos CTAs; cantos arredondados que ecoam o círculo do logo. */
+:root{
+  --navy:#032538;
+  --navy-2:#0a3550;
+  --green:#57901d;
+  --green-2:#6aa82a;
+  --green-soft:#eef5e6;
+  --paper:#f7f9f6;
+  --card:#ffffff;
+  --steel:#5a6b75;
+  --line:#dde5e0;
+  --font-display:"Lexend","Segoe UI",Arial,sans-serif;
+  --font-body:"Mulish","Segoe UI",Roboto,Arial,sans-serif;
+  --wrap:1180px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--navy);font:400 17px/1.65 var(--font-body)}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);line-height:1.1;margin:0;text-wrap:balance;letter-spacing:-.015em}
+h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:700}
+h3{font-size:1.22rem;font-weight:600}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--green-2);outline-offset:3px;border-radius:6px}
+.tag{font:600 .74rem/1 var(--font-body);letter-spacing:.03em;padding:.38rem .6rem;border-radius:999px;background:var(--green-soft);color:var(--green);display:inline-block;white-space:nowrap}
+.eyebrow{font:600 .78rem/1 var(--font-display);letter-spacing:.22em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:.6rem}
+.btn{display:inline-flex;align-items:center;gap:.55rem;font:600 1rem/1 var(--font-display);text-decoration:none;padding:1rem 1.5rem;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-signal{background:var(--green);color:#fff;box-shadow:0 10px 22px -10px rgba(87,144,29,.7)}
+.btn-signal:hover{background:var(--green-2)}
+.btn-ghost{border-color:currentColor;color:inherit;background:transparent}
+.btn svg{width:20px;height:20px;flex:none;fill:currentColor}
+
+.topbar{background:var(--navy);color:#b6c6cf;font-size:.86rem}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;justify-content:space-between;padding-top:.5rem;padding-bottom:.5rem}
+.topbar b{color:#fff;font-weight:700}
+
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:80px}
+.logo img{height:46px;width:auto;display:block}
+nav.main{display:flex;gap:1.6rem;align-items:center}
+nav.main a{font:500 .98rem/1 var(--font-display);text-decoration:none;padding:.4rem 0;position:relative}
+nav.main a:not(.btn)::after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:2px;background:var(--green);transition:right .2s}
+nav.main a:not(.btn):hover::after{right:0}
+nav.main .btn{padding:.75rem 1.1rem}
+.menu-toggle{display:none;background:none;border:2px solid var(--navy);border-radius:999px;padding:.45rem .9rem;font:600 .9rem/1 var(--font-display);cursor:pointer;color:var(--navy)}
+@media (max-width:960px){
+  .menu-toggle{display:block}
+  nav.main{position:absolute;top:80px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:.5rem 20px 1rem;display:none}
+  nav.main.open{display:flex}
+  nav.main a{padding:.9rem 0;border-bottom:1px solid var(--line)}
+  nav.main .btn{margin-top:.8rem;justify-content:center}
+}
+
+/* hero claro com painel da marca */
+.hero{background:linear-gradient(180deg,#fff 0%,var(--paper) 100%);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-180px;top:-180px;width:560px;height:560px;border-radius:50%;border:56px solid var(--green-soft)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .9fr;gap:3.5rem;align-items:center;padding-top:4.5rem;padding-bottom:4.5rem}
+.hero h1{font-size:clamp(2.3rem,5vw,3.7rem);font-weight:700;margin:1.1rem 0 1.3rem}
+.hero h1 .hl{color:var(--green)}
+.hero .lead{font-size:1.15rem;color:var(--steel);max-width:34em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.hero .btn-ghost{color:var(--navy)}
+.hero .nrs{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:2.2rem}
+.brandcard{background:var(--navy);color:#fff;border-radius:28px;padding:2.2rem;position:relative;box-shadow:0 30px 60px -28px rgba(3,37,56,.65)}
+.brandcard .icon{width:118px;height:118px;border-radius:50%;background:#fff;display:grid;place-items:center;margin:-4.6rem auto 1.2rem;box-shadow:0 0 0 8px var(--paper)}
+.brandcard .icon img{width:92px;height:auto}
+.brandcard h3{text-align:center;font-size:1.25rem;margin-bottom:1.2rem}
+.brandcard ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.75rem}
+.brandcard li{display:grid;grid-template-columns:26px 1fr;gap:.7rem;align-items:start;color:#d3e0e7;font-size:.98rem}
+.brandcard li::before{content:"";width:22px;height:22px;border-radius:50%;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12l4 4 8-8'/%3E%3C/svg%3E") center/14px no-repeat;margin-top:.15rem}
+.brandcard .resp{margin-top:1.5rem;padding-top:1.1rem;border-top:1px solid rgba(255,255,255,.15);font-size:.85rem;color:#9fb4c0;text-align:center}
+
+/* faixa verde */
+.band{background:var(--green);color:#fff;overflow:hidden}
+.band .track{display:flex;gap:2.4rem;white-space:nowrap;padding:1rem 0;width:max-content;animation:slide 40s linear infinite;font:500 1rem/1 var(--font-display)}
+.band .track span::before{content:"●";margin-right:2.4rem;opacity:.5}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section{padding:5.5rem 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:1rem 3rem;align-items:end;margin-bottom:3rem}
+.sec-head h2{margin-top:.8rem}
+.sec-head p{color:var(--steel);font-size:1.06rem;max-width:36em}
+@media (max-width:800px){.sec-head{grid-template-columns:1fr}.hero .wrap{grid-template-columns:1fr;gap:5rem}}
+
+.grid-serv{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.4rem}
+@media (max-width:420px){.grid-serv{grid-template-columns:1fr}}
+.serv{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.8rem;display:flex;flex-direction:column;gap:1rem;transition:border-color .2s,box-shadow .2s,transform .2s}
+.serv:hover{border-color:var(--green);box-shadow:0 18px 36px -22px rgba(3,37,56,.4);transform:translateY(-3px)}
+.serv .ic{width:56px;height:56px;border-radius:50%;background:var(--green-soft);display:grid;place-items:center}
+.serv .ic svg{width:28px;height:28px;stroke:var(--green);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.serv p{color:var(--steel)}
+.serv ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.35rem;font-size:.96rem}
+.serv li{padding-left:1.2rem;position:relative}
+.serv li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--green)}
+.serv .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap;padding-top:.8rem;border-top:1px solid var(--line)}
+.serv .foot .tags{display:flex;gap:.3rem;flex-wrap:wrap}
+.serv .foot a{font:600 .95rem/1 var(--font-display);text-decoration:none;color:var(--green)}
+.serv .foot a:hover{text-decoration:underline}
+
+.esocial{background:var(--navy);color:#fff}
+.esocial .sec-head p{color:#b6c6cf}
+.esocial .eyebrow{color:var(--green-2)}
+.ev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+@media (max-width:860px){.ev-grid{grid-template-columns:1fr}}
+.ev{border-radius:20px;padding:1.7rem;display:flex;flex-direction:column;gap:.8rem;background:var(--navy-2);border:1px solid rgba(255,255,255,.08)}
+.ev .code{font:700 2.2rem/1 var(--font-display);color:var(--green-2)}
+.ev p{color:#b6c6cf;font-size:.97rem}
+.esocial .after{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:space-between;margin-top:2.4rem;padding:1.6rem 1.8rem;border-radius:20px;background:rgba(87,144,29,.14);border:1px solid rgba(106,168,42,.35)}
+.esocial .after p{color:#d3e0e7;max-width:40em}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+.about .txt{display:flex;flex-direction:column;gap:1.1rem}
+.about .txt p{color:#33505f;max-width:36em}
+.dados{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;position:relative}
+.dados::before{content:"";display:block;height:6px;background:linear-gradient(90deg,var(--navy) 0 50%,var(--green) 50%)}
+.dados dl{margin:0;display:grid;grid-template-columns:auto 1fr}
+.dados dt,.dados dd{margin:0;padding:1rem 1.3rem;border-bottom:1px solid var(--line)}
+.dados dt{font:600 .74rem/1.4 var(--font-display);letter-spacing:.1em;text-transform:uppercase;color:var(--steel);align-self:center}
+.dados dd{font-weight:700;font-variant-numeric:tabular-nums}
+.dados dl > :nth-last-child(-n+2){border-bottom:0}
+.valores{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.4rem}
+@media (max-width:520px){.valores{grid-template-columns:1fr}}
+.valores div{background:var(--green-soft);border-radius:16px;padding:1rem}
+.valores b{font:600 1.05rem/1.1 var(--font-display);display:block;margin-bottom:.3rem;color:var(--green)}
+.valores span{color:var(--steel);font-size:.93rem}
+
+.proc{background:#fff}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+.step{background:var(--paper);border-radius:20px;padding:1.6rem}
+.step .n{width:52px;height:52px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font:700 1.1rem/1 var(--font-display)}
+.step:nth-child(even) .n{background:var(--green)}
+.step h3{margin:1rem 0 .4rem}
+.step p{color:var(--steel);font-size:.96rem}
+
+.segs{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+@media (max-width:860px){.segs{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.segs{grid-template-columns:1fr}}
+.seg{border-radius:20px;padding:1.4rem;background:var(--card);border:1px solid var(--line)}
+.seg b{font:600 1.15rem/1.2 var(--font-display);display:block}
+.seg span{color:var(--steel);font-size:.94rem;display:block;margin:.4rem 0 .9rem}
+.seg .tags{display:flex;flex-wrap:wrap;gap:.3rem}
+
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+@media (max-width:860px){.posts{grid-template-columns:1fr}}
+.post{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.post .cover{height:130px;background:var(--navy);position:relative;display:flex;align-items:flex-end;padding:1.1rem 1.3rem;overflow:hidden}
+.post:nth-child(2) .cover{background:var(--green)}
+.post .cover::after{content:"";position:absolute;right:-40px;top:-40px;width:150px;height:150px;border-radius:50%;border:22px solid rgba(255,255,255,.12)}
+.post .cover span{font:700 2rem/1 var(--font-display);color:#fff}
+.post .body{padding:1.4rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.post h3{font-size:1.15rem}
+.post p{color:var(--steel);font-size:.96rem}
+.post .meta{font:600 .74rem/1 var(--font-display);color:var(--green);letter-spacing:.08em;text-transform:uppercase;margin-top:auto;padding-top:.6rem}
+
+.faq{max-width:860px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.3rem;margin-bottom:.8rem}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;font:600 1.05rem/1.3 var(--font-display)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.3rem;line-height:1;color:#fff;background:var(--green);width:30px;height:30px;display:grid;place-items:center;border-radius:50%;flex:none}
+.faq details[open] summary::after{content:"–";background:var(--navy)}
+.faq details p{margin-top:.7rem;color:#33505f;max-width:46em}
+
+.contato{background:var(--navy);color:#fff}
+.contato .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem}
+@media (max-width:860px){.contato .grid{grid-template-columns:1fr}}
+.contato .eyebrow{color:var(--green-2)}
+.contato h2{margin:.8rem 0 1rem}
+.contato .info{display:flex;flex-direction:column;gap:1.1rem;margin-top:2rem}
+.contato .info div{display:flex;gap:.9rem;align-items:flex-start}
+.contato .info svg{width:40px;height:40px;padding:9px;border-radius:50%;background:rgba(106,168,42,.18);stroke:var(--green-2);fill:none;stroke-width:1.8;flex:none}
+.contato .info small{display:block;font:600 .72rem/1.3 var(--font-display);letter-spacing:.1em;text-transform:uppercase;color:#9fb4c0}
+.contato .info span{color:#fff;font-weight:700}
+form.lead{background:#fff;color:var(--navy);border-radius:24px;padding:2rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+form.lead .full{grid-column:1/-1}
+@media (max-width:560px){form.lead{grid-template-columns:1fr;padding:1.4rem}}
+form.lead label{display:flex;flex-direction:column;gap:.35rem;font:600 .9rem/1.2 var(--font-body)}
+form.lead input,form.lead select,form.lead textarea{font:400 1rem/1.4 var(--font-body);padding:.8rem .95rem;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);color:var(--navy);width:100%}
+form.lead input:focus,form.lead select:focus,form.lead textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(87,144,29,.25)}
+form.lead textarea{min-height:110px;resize:vertical}
+form.lead .btn{justify-content:center;width:100%}
+form.lead .err{color:#b42318;font-size:.9rem;min-height:1.2em}
+.sent{display:none;grid-column:1/-1;background:var(--green-soft);border:1px solid #c9e0b0;border-radius:12px;padding:1rem;font-size:.96rem}
+.sent.show{display:block}
+.sent a{font-weight:700;color:var(--green)}
+
+footer.site{background:#021a28;color:#9fb4c0;padding:3.5rem 0 1.6rem;font-size:.95rem}
+footer.site .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2rem}
+@media (max-width:860px){footer.site .cols{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){footer.site .cols{grid-template-columns:1fr}}
+footer.site .logo img{height:58px}
+footer.site h4{font:600 .95rem/1 var(--font-display);color:#fff;margin:0 0 1rem}
+footer.site ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.5rem}
+footer.site a{text-decoration:none}
+footer.site a:hover{color:var(--green-2)}
+footer.site .legal{border-top:1px solid rgba(255,255,255,.1);margin-top:2.5rem;padding-top:1.4rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem;font-size:.8rem}
+
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:30;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 24px -6px rgba(0,0,0,.45);transition:transform .15s}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+.hero h1,.hero .lead,.hero .ctas{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.hero .lead{animation-delay:.08s}.hero .ctas{animation-delay:.16s}
+
+/* animação do título */
+.hero h1{animation:none}
+.hero h1 .w{display:inline-block;animation:wordIn .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i)*70ms)}
+@keyframes wordIn{from{transform:translateY(.35em);opacity:.15}to{transform:none;opacity:1}}
+.rot-wrap{display:inline-flex;align-items:baseline;white-space:nowrap;position:relative}
+.rot-wrap .hl{position:relative;background:linear-gradient(var(--green-soft),var(--green-soft)) 0 88%/0% .32em no-repeat;animation:mark .9s .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes mark{to{background-size:100% .32em}}
+.hl.swap{animation:none;background-size:100% .32em}
+.caret{display:inline-block;width:.07em;height:.9em;background:var(--green);margin-left:.06em;align-self:center;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero::before{animation:ring 14s ease-in-out infinite}
+.hero::after{content:"";position:absolute;right:-60px;top:-60px;width:320px;height:320px;border-radius:50%;border:2px dashed rgba(87,144,29,.35);animation:spin 40s linear infinite;pointer-events:none}
+@keyframes ring{50%{transform:scale(1.06) translate(-10px,10px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.brandcard{animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+.brandcard li{animation:wordIn .6s cubic-bezier(.2,.7,.2,1) both}
+.brandcard li:nth-child(1){animation-delay:.5s}.brandcard li:nth-child(2){animation-delay:.6s}.brandcard li:nth-child(3){animation-delay:.7s}.brandcard li:nth-child(4){animation-delay:.8s}.brandcard li:nth-child(5){animation-delay:.9s}
+@media (max-width:520px){.rot-wrap{white-space:normal}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.42 1.3-1.95 1.35-.5.05-.98.24-3.3-.69-2.79-1.1-4.55-3.95-4.69-4.13-.14-.18-1.12-1.49-1.12-2.85 0-1.35.71-2.02.96-2.29.25-.27.55-.34.73-.34h.53c.17 0 .4-.07.62.47.24.56.79 1.92.86 2.06.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.34Z"/></symbol>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Segunda a sexta, <b>7h às 18h</b></span>
+    <span>Eunápolis e região · atendimento em toda a Bahia</span>
+    <span>WhatsApp <b id="tb-phone">(73) 9 9908-6725</b> · <a href="https://instagram.com/segup.sst" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:700">@segup.sst</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#inicio"><img src="img/logo.png" alt="Seg-Up Segurança do Trabalho" width="830" height="238"></a>
+    <button class="menu-toggle" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#esocial">eSocial</a>
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#conteudos">Conteúdos</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-signal wa-link" data-msg="Olá! Vim pelo site da Seg-Up e gostaria de falar com um especialista." href="#contato"><svg aria-hidden="true"><use href="#i-wa"/></svg>Orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<div class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Consultoria em segurança do trabalho</p>
+      <h1 aria-label="Segurança do trabalho que protege pessoas e o seu negócio"><span class="w" style="--i:0">Segurança</span> <span class="w" style="--i:1">do</span> <span class="w" style="--i:2">trabalho</span> <span class="w" style="--i:3">que</span><br><span class="rot-wrap"><span class="hl" id="rot">protege pessoas</span><i class="caret" aria-hidden="true"></i></span><br><span class="w" style="--i:5">e</span> <span class="w" style="--i:6">o</span> <span class="w" style="--i:7">seu</span> <span class="w" style="--i:8">negócio</span></h1>
+      <p class="lead">Programas obrigatórios, laudos técnicos, eSocial SST e treinamentos para empresas do campo, da indústria e do comércio. Atendimento próximo, com responsável técnico em cada entrega.</p>
+      <div class="ctas">
+        <a class="btn btn-signal wa-link" data-msg="Olá! Gostaria de falar com um especialista em segurança do trabalho." href="#contato"><svg aria-hidden="true"><use href="#i-wa"/></svg>Falar com especialista</a>
+        <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+      </div>
+      <div class="nrs" aria-label="Normas atendidas">
+        <span class="tag">NR-01</span><span class="tag">NR-05</span><span class="tag">NR-06</span><span class="tag">NR-07</span><span class="tag">NR-10</span><span class="tag">NR-12</span><span class="tag">NR-15</span><span class="tag">NR-17</span><span class="tag">NR-23</span><span class="tag">NR-31</span><span class="tag">NR-35</span>
+      </div>
+    </div>
+    <div class="brandcard">
+      <div class="icon"><img src="img/icone.png" alt="" width="239" height="238"></div>
+      <h3>O que a sua empresa recebe</h3>
+      <ul>
+        <li>Visita técnica em campo antes de qualquer documento</li>
+        <li>PGR, laudos e programas com responsável técnico</li>
+        <li>Avaliação de riscos psicossociais exigida pela NR-01</li>
+        <li>Eventos de SST enviados no prazo ao eSocial</li>
+        <li>Treinamentos com certificado para cada participante</li>
+      </ul>
+      <p class="resp">Segunda a sexta, 7h às 18h · Eunápolis e região</p>
+    </div>
+  </div>
+</div>
+<div class="band" aria-hidden="true"><div class="track"><span>PGR e PGRTR</span><span>LTCAT</span><span>Laudos de insalubridade e periculosidade</span><span>Riscos psicossociais NR-01</span><span>eSocial SST</span><span>Treinamentos em NRs</span><span>Brigada de incêndio</span><span>Assistência técnica pericial</span><span>PGR e PGRTR</span><span>LTCAT</span><span>Laudos de insalubridade e periculosidade</span><span>Riscos psicossociais NR-01</span><span>eSocial SST</span><span>Treinamentos em NRs</span><span>Brigada de incêndio</span><span>Assistência técnica pericial</span></div></div>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">O que fazemos</p><h2>Serviços de segurança e saúde do trabalho</h2></div>
+      <p>Cada empresa recebe um escopo feito para a sua atividade, grau de risco e número de trabalhadores. Você sabe o que precisa, o prazo de cada documento e quem responde por ele.</p>
+    </div>
+    <div class="grid-serv">
+      <article class="serv">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M9 3h6l1 2h3v16H5V5h3Z"/><path d="M9 12l2 2 4-4"/><path d="M8 18h8"/></svg></div>
+        <h3>Programas e gestão de riscos</h3>
+        <p>Documentos obrigatórios elaborados em campo, com plano de ação que a sua equipe consegue executar.</p>
+        <ul><li>PGR (Programa de Gerenciamento de Riscos)</li><li>PGRTR para atividades rurais</li><li>Inventário de riscos e plano de ação</li><li>Ordens de serviço e fichas de EPI</li></ul>
+        <div class="foot"><span class="tags"><span class="tag">NR-01</span><span class="tag">NR-31</span></span><a class="wa-link" data-msg="Olá! Quero um orçamento de PGR / PGRTR." href="#contato">Solicitar →</a></div>
+      </article>
+      <article class="serv">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M6 2h9l4 4v16H6Z"/><path d="M14 2v5h5"/><path d="M9 13h7M9 17h5"/></svg></div>
+        <h3>Laudos técnicos</h3>
+        <p>Avaliações qualitativas e quantitativas com fundamentação técnica para proteger a empresa em fiscalizações e processos.</p>
+        <ul><li>LTCAT</li><li>Laudo de insalubridade</li><li>Laudo de periculosidade</li><li>Análise Ergonômica do Trabalho (AET)</li></ul>
+        <div class="foot"><span class="tags"><span class="tag">NR-15</span><span class="tag">NR-16</span><span class="tag">NR-17</span></span><a class="wa-link" data-msg="Olá! Preciso de um laudo técnico (LTCAT / insalubridade / periculosidade)." href="#contato">Solicitar →</a></div>
+      </article>
+      <article class="serv">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/><path d="M12 6v2l1.5 1"/></svg></div>
+        <h3>Riscos psicossociais</h3>
+        <p>Avaliação dos fatores psicossociais exigida pelo novo texto da NR-1, com questionário validado e relatório com medidas de controle.</p>
+        <ul><li>Aplicação do COPSOQ II</li><li>Avaliação Ergonômica Preliminar (AEP)</li><li>Relatório técnico e plano de ação</li><li>Integração ao inventário do PGR</li></ul>
+        <div class="foot"><span class="tags"><span class="tag">NR-01</span><span class="tag">NR-17</span></span><a class="wa-link" data-msg="Olá! Quero saber sobre a avaliação de riscos psicossociais (NR-1)." href="#contato">Solicitar →</a></div>
+      </article>
+      <article class="serv">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M5 20V9l7-5 7 5v11"/><path d="M9 20v-6h6v6"/></svg></div>
+        <h3>Treinamentos em NRs</h3>
+        <p>Turmas na sua empresa ou na fazenda, com conteúdo prático, lista de presença e certificado de cada participante.</p>
+        <ul><li>CIPA e designado de CIPA</li><li>Trabalho em altura e espaço confinado</li><li>Máquinas, EPI e segurança em eletricidade</li><li>Operação de máquinas agrícolas</li></ul>
+        <div class="foot"><span class="tags"><span class="tag">NR-05</span><span class="tag">NR-35</span><span class="tag">NR-33</span></span><a class="wa-link" data-msg="Olá! Quero agendar um treinamento de NR para minha equipe." href="#contato">Solicitar →</a></div>
+      </article>
+      <article class="serv">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22c4 0 7-2.7 7-6.8 0-3.6-2.6-5.9-4-8.2-.4 2-1.4 3-2.6 3.5C12.8 7 11 4.5 9 2c0 4-4 6.5-4 12 0 4.6 3 8 7 8Z"/></svg></div>
+        <h3>Prevenção e combate a incêndio</h3>
+        <p>Preparação para emergências do dimensionamento de extintores à formação da brigada.</p>
+        <ul><li>Formação de brigada de incêndio</li><li>Plano de atendimento a emergências</li><li>Inspeção de extintores e sinalização</li><li>Simulados de abandono</li></ul>
+        <div class="foot"><span class="tags"><span class="tag">NR-23</span></span><a class="wa-link" data-msg="Olá! Quero informações sobre brigada e prevenção de incêndio." href="#contato">Solicitar →</a></div>
+      </article>
+      <article class="serv">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0Z"/><path d="M19 7l-3 7a3 3 0 0 0 6 0Z"/><path d="M8 21h8"/></svg></div>
+        <h3>Assistência técnica pericial</h3>
+        <p>Acompanhamento de perícias trabalhistas pela empresa, com parecer técnico e quesitos bem formulados.</p>
+        <ul><li>Assistente técnico em perícias de insalubridade e periculosidade</li><li>Acompanhamento de diligências</li><li>Elaboração de quesitos</li><li>Parecer técnico divergente</li></ul>
+        <div class="foot"><span class="tags"><span class="tag">Perícia</span></span><a class="wa-link" data-msg="Olá! Preciso de assistente técnico para uma perícia trabalhista." href="#contato">Solicitar →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- eSOCIAL -->
+<section class="esocial" id="esocial">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">eSocial SST</p><h2>Seus eventos de SST enviados no prazo</h2></div>
+      <p>Cuidamos do envio dos eventos de segurança e saúde do trabalho com procuração eletrônica, a partir de documentos técnicos atualizados. Sem multa por atraso e sem informação divergente do PGR.</p>
+    </div>
+    <div class="ev-grid">
+      <div class="ev"><span class="code">S-2210</span><h3>Comunicação de Acidente de Trabalho</h3><p>Registro da CAT até o primeiro dia útil seguinte ao acidente, ou imediatamente em caso de óbito.</p></div>
+      <div class="ev"><span class="code">S-2220</span><h3>Monitoramento da saúde do trabalhador</h3><p>Informações dos exames ocupacionais (ASO) previstos no PCMSO, em parceria com a clínica de medicina do trabalho.</p></div>
+      <div class="ev"><span class="code">S-2240</span><h3>Condições ambientais do trabalho</h3><p>Agentes nocivos por cargo, base para aposentadoria especial e recolhimento correto do adicional do GILRAT.</p></div>
+    </div>
+    <div class="after">
+      <p>Ainda não sabe se os eventos da sua empresa estão em dia? Fazemos um diagnóstico rápido a partir do seu certificado digital ou procuração.</p>
+      <a class="btn btn-signal wa-link" data-msg="Olá! Quero um diagnóstico dos eventos de SST no eSocial da minha empresa." href="#contato"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir diagnóstico</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUEM SOMOS -->
+<section id="quem-somos">
+  <div class="wrap about">
+    <div class="txt">
+      <p class="eyebrow">Quem somos</p>
+      <h2>Prevenção feita por quem conhece o chão da empresa</h2>
+      <p>A Seg-Up Consultoria e Atividades de Segurança do Trabalho nasceu em março de 2024 com um propósito simples: tirar a segurança do papel e levá-la para a rotina das empresas do extremo sul da Bahia.</p>
+      <p>Atuamos no campo, na indústria e no comércio. Visitamos cada setor, conversamos com quem executa o trabalho e entregamos documentos que fazem sentido para a sua operação, sem modelo copiado de outra empresa.</p>
+      <div class="valores">
+        <div><b>Técnica</b><span>Documentos fundamentados nas NRs vigentes.</span></div>
+        <div><b>Presença</b><span>Atendimento em campo, perto da sua equipe.</span></div>
+        <div><b>Clareza</b><span>Prazos, custos e responsáveis definidos.</span></div>
+      </div>
+    </div>
+    <div class="dados">
+      <dl>
+        <dt>Razão social</dt><dd>Seg-Up Consultoria e Atividades de Segurança do Trabalho Ltda</dd>
+        <dt>CNPJ</dt><dd>54.478.734/0001-00</dd>
+        <dt>Fundação</dt><dd>26/03/2024</dd>
+        <dt>Atuação</dt><dd>Eunápolis, extremo sul e toda a Bahia</dd>
+        <dt>Atendimento</dt><dd>Segunda a sexta, 7h às 18h</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="proc">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Como trabalhamos</p><h2>Do diagnóstico ao acompanhamento</h2></div>
+      <p>Um método em quatro etapas para a sua empresa sair da pendência e permanecer em conformidade.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Diagnóstico</h3><p>Visita técnica, análise dos documentos existentes e levantamento das pendências legais.</p></div>
+      <div class="step"><div class="n">02</div><h3>Proposta</h3><p>Escopo, prazos e investimento por escrito, de acordo com o grau de risco da atividade.</p></div>
+      <div class="step"><div class="n">03</div><h3>Execução</h3><p>Avaliações em campo, elaboração dos documentos, treinamentos e envio ao eSocial.</p></div>
+      <div class="step"><div class="n">04</div><h3>Acompanhamento</h3><p>Monitoramento do plano de ação, revisões periódicas e suporte em fiscalizações.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEGMENTOS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Segmentos</p><h2>Para quem trabalhamos</h2></div>
+      <p>Experiência com as normas e os riscos específicos de cada setor da economia da região.</p>
+    </div>
+    <div class="segs">
+      <div class="seg"><b>Agronegócio</b><span>Fazendas, beneficiamento de frutas, café e pecuária.</span><div class="tags"><span class="tag">NR-31</span><span class="tag">PGRTR</span></div></div>
+      <div class="seg"><b>Indústria</b><span>Agroindústrias, alimentos, madeira e transformação.</span><div class="tags"><span class="tag">NR-12</span><span class="tag">NR-10</span></div></div>
+      <div class="seg"><b>Construção civil</b><span>Obras, reformas e prestadores de serviço.</span><div class="tags"><span class="tag">NR-18</span><span class="tag">NR-35</span></div></div>
+      <div class="seg"><b>Comércio e serviços</b><span>Lojas, clínicas, escritórios e transportadoras.</span><div class="tags"><span class="tag">NR-01</span><span class="tag">NR-17</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEÚDOS -->
+<section id="conteudos" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Conteúdos</p><h2>Informação que previne</h2></div>
+      <p>Artigos curtos sobre as mudanças nas normas e o que elas exigem da sua empresa.</p>
+    </div>
+    <div class="posts">
+      <article class="post"><div class="cover"><span>NR-01</span></div><div class="body"><h3>Riscos psicossociais no PGR: o que muda para a sua empresa</h3><p>Quem precisa avaliar, quais instrumentos usar e como registrar as medidas no inventário de riscos.</p><span class="meta">Gestão de riscos · 5 min</span></div></article>
+      <article class="post"><div class="cover"><span>S-2240</span></div><div class="body"><h3>eSocial SST: os erros mais comuns no envio do S-2240</h3><p>Divergência entre laudo e evento, códigos de agentes nocivos e prazos que geram multa.</p><span class="meta">eSocial · 4 min</span></div></article>
+      <article class="post"><div class="cover"><span>NR-31</span></div><div class="body"><h3>Segurança no campo: o básico do PGRTR para fazendas</h3><p>Como estruturar o programa rural, treinar a equipe e controlar o uso de agrotóxicos e máquinas.</p><span class="meta">Agronegócio · 6 min</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Dúvidas frequentes</p><h2>Perguntas que recebemos</h2></div>
+      <p>Não encontrou a sua? Fale com a gente pelo WhatsApp.</p>
+    </div>
+    <div class="faq">
+      <details><summary>Toda empresa precisa ter PGR?</summary><p>Sim. Pela NR-01, toda organização com empregados regidos pela CLT deve gerenciar seus riscos ocupacionais. Microempresas e empresas de pequeno porte de grau de risco 1 e 2 sem exposição a agentes físicos, químicos ou biológicos podem ter tratamento simplificado, mas ainda precisam formalizar a declaração.</p></details>
+      <details><summary>A avaliação de riscos psicossociais já é obrigatória?</summary><p>A NR-01 passou a exigir que os fatores de risco psicossociais façam parte do gerenciamento de riscos. Fazemos a avaliação com questionário validado e incluímos os resultados e as medidas de controle no inventário do PGR.</p></details>
+      <details><summary>Vocês atendem fora de Eunápolis?</summary><p>Sim. Atendemos Eunápolis, Porto Seguro, Itabela, Itagimirim, Santa Cruz Cabrália e demais cidades do extremo sul, além de projetos em toda a Bahia.</p></details>
+      <details><summary>Quanto tempo leva para elaborar o PGR?</summary><p>Depende do número de setores e da complexidade das atividades. Após a visita técnica informamos o prazo exato na proposta, normalmente entre uma e três semanas.</p></details>
+      <details><summary>Os treinamentos emitem certificado?</summary><p>Sim. Cada participante recebe certificado com conteúdo programático, carga horária e assinatura do responsável técnico, e a empresa recebe a lista de presença para arquivo.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contato" id="contato">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Contato</p>
+      <h2>Vamos conversar sobre a sua empresa</h2>
+      <p style="color:#c9d6dc;max-width:30em">Conte o que você precisa e retornamos com uma proposta. O formulário abre uma conversa no WhatsApp com a sua mensagem já escrita.</p>
+      <div class="info">
+        <div><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><p><small>WhatsApp e telefone</small><span id="ct-phone">(73) 9 9908-6725</span></p></div>
+        <div><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><p><small>Instagram</small><a href="https://instagram.com/segup.sst" target="_blank" rel="noopener" style="color:#fff;font-weight:700;text-decoration:none">@segup.sst</a></p></div>
+        <div><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><p><small>E-mail</small><a id="ct-mail" href="mailto:segup.sst@gmail.com" style="color:#fff;font-weight:700;text-decoration:none">segup.sst@gmail.com</a></p></div>
+        <div><svg viewBox="0 0 24 24"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><p><small>Atendimento</small><span>Eunápolis/BA e região</span></p></div>
+        <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><p><small>Horário</small><span>Segunda a sexta, 7h às 18h</span></p></div>
+      </div>
+    </div>
+    <form class="lead" id="leadForm" novalidate>
+      <label for="f-nome">Nome<input id="f-nome" name="nome" autocomplete="name" required></label>
+      <label for="f-empresa">Empresa<input id="f-empresa" name="empresa" autocomplete="organization"></label>
+      <label for="f-tel">WhatsApp / telefone<input id="f-tel" name="tel" type="tel" autocomplete="tel" required></label>
+      <label for="f-email">E-mail<input id="f-email" name="email" type="email" autocomplete="email"></label>
+      <label class="full" for="f-serv">Serviço de interesse
+        <select id="f-serv" name="servico">
+          <option>PGR / PGRTR</option><option>Laudos (LTCAT, insalubridade, periculosidade)</option><option>Riscos psicossociais (NR-1)</option><option>Treinamentos em NRs</option><option>eSocial SST</option><option>Prevenção e combate a incêndio</option><option>Assistência técnica em perícia</option><option>Outro assunto</option>
+        </select>
+      </label>
+      <label class="full" for="f-msg">Como podemos ajudar?<textarea id="f-msg" name="msg" placeholder="Ex.: fazenda com 40 trabalhadores, precisamos atualizar o PGRTR e treinar a equipe."></textarea></label>
+      <input type="text" name="site" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <p class="err full" id="f-err" role="alert"></p>
+      <div class="full"><button class="btn btn-signal" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar pelo WhatsApp</button></div>
+      <div class="sent" id="f-sent">Mensagem pronta. <a id="f-link" href="#" target="_blank" rel="noopener">Abrir conversa no WhatsApp →</a><br><small>Se o WhatsApp não abrir, chame no número <span class="phone-txt">(73) 9 9908-6725</span>.</small></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#inicio"><img src="img/logo-branco.png" alt="Seg-Up Segurança do Trabalho" width="762" height="228"></a>
+        <p style="margin-top:1rem;max-width:26em">Consultoria, laudos, programas obrigatórios e treinamentos em segurança do trabalho para empresas da Bahia.</p>
+      </div>
+      <div><h4>Serviços</h4><ul><li><a href="#servicos">Programas e PGR</a></li><li><a href="#servicos">Laudos técnicos</a></li><li><a href="#servicos">Riscos psicossociais</a></li><li><a href="#servicos">Treinamentos</a></li></ul></div>
+      <div><h4>Empresa</h4><ul><li><a href="#quem-somos">Quem somos</a></li><li><a href="#esocial">eSocial SST</a></li><li><a href="#conteudos">Conteúdos</a></li><li><a href="#contato">Contato</a></li></ul></div>
+      <div><h4>Contato</h4><ul><li class="phone-txt">(73) 9 9908-6725</li><li><a href="mailto:segup.sst@gmail.com">segup.sst@gmail.com</a></li><li><a href="https://instagram.com/segup.sst" target="_blank" rel="noopener">Instagram @segup.sst</a></li><li>Seg a sex, 7h às 18h</li></ul></div>
+    </div>
+    <div class="legal">
+      <span>© <span id="yr">2026</span> Seg-Up Consultoria e Atividades de Segurança do Trabalho Ltda</span>
+      <span>CNPJ 54.478.734/0001-00</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float wa-link" data-msg="Olá! Vim pelo site da Seg-Up." href="#contato" aria-label="Conversar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script src="js/config.js"></script>
+<script>
+// ===== CONFIGURAÇÃO: troque pelo número real (DDI + DDD + número, só dígitos) =====
+var WHATSAPP = "5573999086725";
+var TELEFONE_TXT = "(73) 9 9908-6725";
+// ===============================================================================
+
+// grava o contato no Supabase (se configurado em js/config.js); falha em silêncio para não travar o WhatsApp
+function salvarLead(dados){
+  var c = window.SEGUP_CONFIG || {};
+  if(!c.supabaseUrl || !c.supabaseAnonKey) return;
+  try {
+    fetch(c.supabaseUrl + "/rest/v1/leads", {
+      method:"POST",
+      headers:{"apikey":c.supabaseAnonKey,"Authorization":"Bearer "+c.supabaseAnonKey,"Content-Type":"application/json","Prefer":"return=minimal"},
+      body: JSON.stringify(dados), keepalive:true
+    }).catch(function(){});
+  } catch(_) {}
+}
+
+function waUrl(msg){ return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(msg); }
+
+document.querySelectorAll(".wa-link").forEach(function(a){
+  a.href = waUrl(a.getAttribute("data-msg") || "Olá!");
+  a.target = "_blank"; a.rel = "noopener";
+});
+document.querySelectorAll("#tb-phone,#ct-phone,.phone-txt").forEach(function(el){ el.textContent = TELEFONE_TXT; });
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+// menu móvel
+var btn = document.getElementById("menuBtn"), nav = document.getElementById("nav");
+btn.addEventListener("click", function(){
+  var open = nav.classList.toggle("open");
+  btn.setAttribute("aria-expanded", open ? "true" : "false");
+});
+nav.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){ nav.classList.remove("open"); btn.setAttribute("aria-expanded","false"); }); });
+
+// formulário -> mensagem de WhatsApp
+document.getElementById("leadForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  var f = e.target, err = document.getElementById("f-err");
+  var nome = f.nome.value.trim(), tel = f.tel.value.trim();
+  if(!nome || !tel){ err.textContent = "Preencha o seu nome e um telefone para retorno."; (nome ? f.tel : f.nome).focus(); return; }
+  err.textContent = "";
+  var linhas = [
+    "Olá, Seg-Up! Vim pelo site.",
+    "Nome: " + nome,
+    f.empresa.value.trim() ? "Empresa: " + f.empresa.value.trim() : "",
+    "Telefone: " + tel,
+    f.email.value.trim() ? "E-mail: " + f.email.value.trim() : "",
+    "Serviço: " + f.servico.value,
+    f.msg.value.trim() ? "Mensagem: " + f.msg.value.trim() : ""
+  ].filter(Boolean).join("\n");
+  var url = waUrl(linhas);
+  document.getElementById("f-link").href = url;
+  document.getElementById("f-sent").classList.add("show");
+  if (!f.site.value) salvarLead({nome:nome, empresa:f.empresa.value.trim()||null, telefone:tel, email:f.email.value.trim()||null, servico:f.servico.value, mensagem:f.msg.value.trim()||null});
+  try { var w = window.open(url, "_blank", "noopener"); } catch(_) {}
+});
+
+// título: frase verde em rotação (efeito de digitação)
+(function(){
+  var el=document.getElementById("rot"); if(!el) return;
+  if(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var frases=["protege pessoas","evita acidentes","cumpre as NRs","cuida da sua equipe","protege pessoas"];
+  var i=0;
+  function apagar(cb){var t=el.textContent;(function step(){t=t.slice(0,-1);el.textContent=t;if(t.length)setTimeout(step,35);else cb();})();}
+  function digitar(txt,cb){var n=0;(function step(){n++;el.textContent=txt.slice(0,n);if(n<txt.length)setTimeout(step,65);else cb();})();}
+  function ciclo(){i=(i+1)%(frases.length-1);el.classList.add("swap");apagar(function(){digitar(frases[i],function(){setTimeout(ciclo,2600);});});}
+  setTimeout(ciclo,3200);
+})();
+</script>
+</body>
+</html>
